@@ -338,3 +338,13 @@ footer {
     display: block;
   }
 }
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  header nav.show {
+    display: flex;
+  }
+}
