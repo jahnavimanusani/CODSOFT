@@ -177,4 +177,20 @@ footer {
     flex-direction: column;
     display: none;
   }
+
+  /* 👇 Added for hamburger menu */
+  header nav ul.active {
+    display: flex;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  header nav ul.active li {
+    margin: 10px 0;
+  }
 }
