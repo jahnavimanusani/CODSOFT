@@ -163,6 +163,9 @@ footer {
   margin-top: 30px;
 }
 
+/* -------------------- */
+/* 📱 Responsive Styles */
+/* -------------------- */
 @media(max-width: 768px) {
   .hero {
     flex-direction: column;
@@ -175,10 +178,9 @@ footer {
 
   header nav ul {
     flex-direction: column;
-    display: none;
+    display: none; /* hide by default */
   }
 
-  /* 👇 Added for hamburger menu */
   header nav ul.active {
     display: flex;
     background: #111;
@@ -193,4 +195,26 @@ footer {
   header nav ul.active li {
     margin: 10px 0;
   }
+}
+
+/* -------------------- */
+/* 🍔 Hamburger Button */
+/* -------------------- */
+.menu-toggle {
+  display: none; /* hidden on desktop */
+  font-size: 26px;
+  cursor: pointer;
+  color: #fff;
+  user-select: none;
+}
+
+@media(max-width: 768px) {
+  .menu-toggle {
+    display: block; /* show on mobile */
+  }
+}
+
+/* Toggle change between ☰ and ✖ */
+.menu-toggle.active::before {
+  content: "✖"; /* close icon */
 }
