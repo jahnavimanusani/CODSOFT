@@ -94,33 +94,6 @@
   <footer>
     <p>© 2025 Jahnavi Manusani. All Rights Reserved.</p>
   </footer>
-</script>
-<script>
-  const menuToggle = document.querySelector(".menu-toggle");
-  const nav = document.querySelector("header nav");
-  const icon = menuToggle.querySelector("i");
 
-  menuToggle.addEventListener("click", () => {
-    nav.classList.toggle("show");
-
-    // Change icon when toggled
-    if (nav.classList.contains("show")) {
-      icon.classList.remove("fa-bars");
-      icon.classList.add("fa-times"); // X icon
-    } else {
-      icon.classList.remove("fa-times");
-      icon.classList.add("fa-bars");
-    }
-  });
-
-  // Optional: Close menu when a link is clicked
-  document.querySelectorAll("header nav a").forEach(link => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("show");
-      icon.classList.remove("fa-times");
-      icon.classList.add("fa-bars");
-    });
-  });
-</script> 
 </body>
 </html>
